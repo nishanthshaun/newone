@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            border: 1px solid gray;
+            padding: 8px;
+            background-image: url(../github/pixel.jpg);
+            margin: 1px 1px;
+            position:static;
+        }
+        .nav{
+            float: right;
+            background-image: none;
+            background-color: white;
+            padding-left: 0pt;
+            overflow:auto;
+        }
+        #PRACTICE{
+            color:rgb(200, 255, 0);
+            font-family:monospace;
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #3ca039;
+            font: Bold 20px Arial;
+        }
+        p {
+            color:rgb(251, 251, 251);
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+            font: Italic 16px serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ba002e;
+        }
+        .lists{
+            background-image: none;
+            background-color: white;
+        }
+        img{
+            float: right;
+        }
+        p1{
+            color:black;
+            text-indent: 50px;
+            display:inline;
+        }
+        ul.a {
+            list-style-type: circle;
+            color:red;
+        }
+
+        ul.b {
+             list-style-type: square;
+             color:blue;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+            color:rgb(187, 187, 19);
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+            color:green;
+        }
+        .outline{
+            background-image: none;
+        }
+        p2{
+            outline-color:red;
+            line-height: 2.4;
+        }
+        p2.dotted {outline-style: dotted;}
+        p2.dashed {outline-style: dashed;}
+        p2.solid {outline-style: solid;}
+        p2.double {outline-style: double;}
+        p2.groove {outline-style: groove;}
+        p2.ridge {outline-style: ridge;}
+        p2.inset {outline-style: inset;}
+        p2.outset {outline-style: outset;}
+        div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+        background-image: none;
+        } 
+        div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+        background-image: none;
+        }
+        table {
+        border-collapse: collapse;
+         width: 100%;
+         background-image: none;
+        }
+        th, td {
+        text-align: left;
+        padding: 8px;
+        background-image: none;
+        }
+        tr:nth-child(odd) {background-color: #000000;color:white;}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        .button{
+            background-image: none;
+            background-color:black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .button:visited{
+            color:rgba(3, 255, 242, 0.829);
+        }
+        .button:hover{
+            color:red; 
+        }
+        .button:active{
+            color:rgb(200, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+        <div class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        </div>
+        <div>
+        <title>PRACTICE</title>
+        <h1>text formatting</h1>
+        <p>This text is styled with some of the text formatting properties. The heading uses the text-align,
+            text-transform, and color properties.
+            The paragraph is indented, aligned, and the space between characters is specified. The underline is removed
+            from this colored
+            <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
+        </div>
+            <div class="lists">
+                <p6><img src="new.jpg" alt="error" style="width: 170px;height: 170px; margin-left: 15px;"</p6>
+                <p1>UNORDERED LISTS</p1>
+                <ul class="a">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ul>
+            
+                <ul class="b">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ul>
+            
+                <p1>ORDERED LISTS</p1>
+                <ol class="c">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ol>
+            
+                <ol class="d">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Coca Cola</li>
+                </ol>
+            </div>
+            <div class="outline">
+                <h2>The outline-style Property</h2>
+                
+                <p2 class="dotted">A dotted outline</p2></br>
+                <p2 class="dashed">A dashed outline</p2></br>
+                <p2 class="solid">A solid outline</p2></br>
+                <p2 class="double">A double outline</p2></br>
+                <p2 class="groove">A groove outline. The effect depends on the outline-color value.</p2></br>
+                <p2 class="ridge">A ridge outline. The effect depends on the outline-color value.</p2></br>
+                <p2 class="inset">An inset outline. The effect depends on the outline-color value.</p2></br>
+                <p2 class="outset">An outset outline. The effect depends on the outline-color value.</p2></br>
+            </div>
+            <h3>Position: Absolute;</h3>
+            
+            <p3>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned
+                relative to the viewport, like fixed):</p3>
+            
+            <div class="relative">This div element has position: relative;
+                <div class="absolute">This div element has position: absolute;</div>
+            </div>
+            <div style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Johnson</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                    </tr>
+                </table>
+            </div>
+            
+    <button class="button">SUBMIT</button>
+</body>
+
+</html>
