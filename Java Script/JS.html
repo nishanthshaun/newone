@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        *{
+            size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+	<h2>JavaScript Practice</h2>
+	<p id="demo"></p>
+
+	<script>
+		function myFunction(p1,p2){
+            return p1 * p2;
+        }
+		document.getElementById("demo").innerHTML =
+			"The value of z is: " + myFunction(5,2);
+            console.log(z);
+    </script>
+        <p id="strings"></p>
+    <script>
+        var index=["1","2","3","4","5"];
+        document.getElementById("strings").innerHTML="The value in index[3] is:" + index[3];
+        console.log(index[3]);
+    </script>
+    <p id="casting"></p>
+    <script>
+         document.getElementById("casting").innerHTML ="4 is:  " +
+                typeof 4 + "</br>";
+    </script>
+    <script type="text/javascript">
+        var num = 6;
+        document.write("type casting into a string:  " + num.toString(2));           
+    </script>
+    <script>
+    </script>
+    <h1>Arthimetic Operations Table</h1>
+<table id="mytable" border="1px">
+</table>
+<button onclick="mytablecreate()">create</button>
+<script>
+    function mytablecreate() {
+        var subjects = ["Maths", "science", "social"];
+        var marks = [100, 100, 100];
+        var totalmarks = 0, average = 0;
+        var i;
+        for (i = 0; i < marks.length; i++) {
+            totalmarks = totalmarks + marks[i];
+        }
+        average = totalmarks / marks.length;
+        var table = document.getElementById("mytable");
+        var j;
+        for (j = 0; j < marks.length; j++) {
+            var row = table.insertRow(j);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            cell1.innerHTML = subjects[j];
+            cell2.innerHTML = marks[j];
+        }
+        var row = table.insertRow(marks.length);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "totalmarks";
+        cell2.innerHTML = totalmarks;
+        var row = table.insertRow((marks.length) + 1)
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = "average";
+        cell2.innerHTML = average;
+    }
+</script>
+    <h1>Math.pow()</h1>
+        <p id="pow"></p>
+
+        <script>
+            document.getElementById("pow").innerHTML = Math.pow(8,2);
+        </script>
+    <h1>Math.sqrt()</h1>
+        <p id="sqrt"></p>
+            <script>
+        <script>
+            document.getElementById("sqrt").innerHTML = Math.sqrt(64);
+        </script>
+    <h1>Math.abs()</h1>
+        <p id="abs"></p>
+        <script>
+            document.getElementById("abs").innerHTML = Math.abs(-4.8);
+        </script>
+     <h1>Math.random()</h1>
+        <p id="random"></p>
+        <script>
+            document.getElementById("random").innerHTML = Math.random();
+        </script>
+    <h1>Math.ceil()</h1>
+        <p id="ceil"></p>
+        <script>
+            document.getElementById("ceil").innerHTML = Math.ceil(4.4);
+        </script>
+    <h1>Math.floor()</h1>
+        <p id="floor"></p>
+            document.getElementById("floor").innerHTML = Math.floor(4.8);
+        </script>
+    <h1>Math.round()</h1>
+        <p id="round"></p>
+        <script>
+            document.getElementById("round").innerHTML = Math.round(-4.8);
+        </script>
+    <h1>Math.sin()</h1>
+        <p id="sin"></p>
+        <script>
+            document.getElementById("sin").innerHTML = Math.sin(90 * Math.PI/180);
+        </script>
+    <h1>Math.cos()</h1>
+        <p id="cos"></p>
+        <script>
+            document.getElementById("cos").innerHTML = Math.cos(90 * Math.PI / 180);
+        </script>
+    <h1>Regular Check in hello world</h1>
+    <p id="idd"></p>
+    <script>
+        function my() {
+            var a = "hello world";
+            var b = /[o]/g;
+            var result = a.match(b);
+            return result;
+        }
+        document.getElementById("idd").innerHTML = my();
+    </script>
+</body>
+</html>
