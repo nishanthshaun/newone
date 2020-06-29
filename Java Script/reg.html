@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  var y = document.forms["myForm"]["num"].value;
+  var z = document.forms["myForm"]["subjects"].value;
+  if (x== "") 
+  {
+    alert("Name must be filled out");
+    return false;
+  }
+  else if(!y.match(/^\d+/))
+  {
+      alert("Phone number should have only numbers");
+      return false;
+  }
+  else if(document.myForm.subjects.checked)
+  {
+      alert("All good")
+  }
+  else{
+      alert("Check checkbox")
+  }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname" required></br></br>
+  Phone Number: <input type="number" name="number" required></br></br>
+  Subjects Interested: 
+  <input type="checkbox" name="subjects" value="subjects">HTML
+  <input type="checkbox" name="subjects" value="subjects">CSS</br></br>
+  <input type="submit" value="Submit" >
+</form>
+</body>
+</html>
