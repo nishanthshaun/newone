@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myfunc()
+{
+var text;
+var num = document.getElementById("myinput").value;
+switch(true){
+case num <= 10:
+text = "value less than 10";
+break;
+case num > 10 && num <= 100:
+text = "value between 10 and 100";
+break;
+case num>100:
+text = "value greater than 100";
+break;
+default:
+text = "invalid value";
+break;
+}
+document.getElementById("demo").innerHTML=text;
+}
+function fibanocci()
+{
+
+var value=document.getElementById("myinput1").value;
+var a = 0;
+var b = 1;
+var c;
+for(i=1;i<=value;i++)
+{
+document.write(a);
+document.write(" ");
+c = a + b;
+a = b;
+b = c;
+}
+}
+</script>
+</head>
+<body>
+<input type="text" id="myinput">
+<button onclick="myfunc()">click it!</button>
+<input type="number" id="myinput1">
+<button onclick="fibanocci()">calculate</button>
+<p id="demo"></p>
+</body>
+</html>
