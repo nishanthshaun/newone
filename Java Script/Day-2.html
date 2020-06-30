@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    #container {
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+    position: relative;
+    background: yellow;
+    }
+    #animate {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    }
+    </style>
+    <script>
+        document.write(Date());
+        console.log(Date());
+    </script>
+      <body>
+    
+        <p><button onclick="myMove()">Click Me</button></p>
+    
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+    
+        <script>
+            function myMove() {
+                var elem = document.getElementById("animate");
+                var pos = 0;
+                var id = setInterval(frame, 5);
+                function frame() {
+                    if (pos == 350) {
+                        clearInterval(id);
+                    } else {
+                        pos++;
+                        elem.style.top = pos + "px";
+                        elem.style.left = pos + "px";
+                    }
+                }
+            }
+        </script>
+        </body>
+        <body onload="myFunction">
+            <h1>Events</h1>
+        <button onclick="displayDate()">The Time is:</button>
+        <script>
+            function displayDate(){
+                document.getElementById("event1").innerHTML=Date();
+            }
+            function myFunction(){
+                alert("Page is Loaded");
+            }
+            function mouse(){
+                document.getElementById("event1").onmouseover=Date();
+            }
+        </script>
+        <p id="event1"></p>
+        </body>
+</html>
