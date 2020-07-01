@@ -10,7 +10,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Gnana.com</title>
+    <title>NishBootstrap</title>
+    <style>
+        #q {
+            background-color: blue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("p").hide(1000);
+            });
+            $("#b2").click(function () {
+                $("p").css("display", "block");
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -97,6 +113,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+</body></br></br>
+<body>
+    <h1>Hiding</h1>
+    <p id="q">This will disappear if you click the button</p></br>
+    <button id="b1">clickme</button>
+    <button id="b2">display</button>
 </body>
 
 </html>
